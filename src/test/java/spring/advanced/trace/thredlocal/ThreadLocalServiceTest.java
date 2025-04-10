@@ -1,8 +1,8 @@
-package spring.advanced.thredlocal;
+package spring.advanced.trace.thredlocal;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import spring.advanced.thredlocal.code.ThreadLocalService;
+import spring.advanced.trace.thredlocal.code.ThreadLocalService;
 
 @Slf4j
 public class ThreadLocalServiceTest {
