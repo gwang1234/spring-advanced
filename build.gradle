@@ -37,6 +37,10 @@ dependencies {
     // GRPC Interface
     implementation "io.grpc:grpc-protobuf:${grpcVersion}"
     implementation "io.grpc:grpc-stub:${grpcVersion}"
+    implementation 'net.devh:grpc-server-spring-boot-starter:2.15.0.RELEASE'
+    implementation 'net.devh:grpc-client-spring-boot-starter:2.15.0.RELEASE'
+    implementation 'jakarta.annotation:jakarta.annotation-api:2.1.1' // Spring Boot 3용
+    compileOnly 'javax.annotation:javax.annotation-api:1.3.2' // gRPC 컴파일 코드용
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
