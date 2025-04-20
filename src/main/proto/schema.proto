@@ -1,0 +1,30 @@
+syntax = 'proto3';
+
+package com.devproblems;
+
+option java_multiple_files = true;
+
+message Book {
+  int32 book_id = 1;
+  string title = 2;
+  float price = 3;
+  int32 pages = 4;
+  int32 author_id = 5;
+}
+
+message Author {
+  int32 author_id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string gender = 4;
+  sint32 book_id = 5;
+}
+
+service BookAuthorService {
+  // 단일식 - 하나 요청, 하나 응답
+  rpc getAuthor(Author) returns(Author){}
+
+  // 서버 스트리밍 - 비동기식
+  // 클라이언트 스트리밍 - 비동기식
+  // 양방향 스트리밍
+}
